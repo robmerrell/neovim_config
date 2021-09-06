@@ -1,0 +1,11 @@
+{
+  "Printf Debugging ---": {
+    "prefix": ["iop"],
+    "body": [
+      "IO.puts(\"------------------------\")",
+      "IO.inspect($1)",
+      "IO.puts(\"------------------------\")"
+    ],
+    "description": "inspect with ---"
+  }
+}
