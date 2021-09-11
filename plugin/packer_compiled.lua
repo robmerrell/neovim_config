@@ -69,6 +69,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["calvera-dark.nvim"] = {
+    loaded = true,
+    path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/calvera-dark.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/cmp-buffer"
@@ -81,9 +85,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/cmp-vsnip"
   },
+  ["fern.vim"] = {
+    loaded = true,
+    path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/fern.vim"
+  },
   kommentary = {
     loaded = true,
     path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/kommentary"
+  },
+  ["lightspeed.nvim"] = {
+    loaded = true,
+    path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/lightspeed.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -92,10 +104,6 @@ _G.packer_plugins = {
   ["lush.nvim"] = {
     loaded = true,
     path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/lush.nvim"
-  },
-  neoformat = {
-    loaded = true,
-    path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/neoformat"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -109,6 +117,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
@@ -116,6 +128,10 @@ _G.packer_plugins = {
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/packer.nvim"
+  },
+  playground = {
+    loaded = true,
+    path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -128,6 +144,10 @@ _G.packer_plugins = {
   ["tokyonight.nvim"] = {
     loaded = true,
     path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/tokyonight.nvim"
+  },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/trouble.nvim"
   },
   ["vim-elixir"] = {
     loaded = true,

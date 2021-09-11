@@ -1,9 +1,15 @@
 vim.g.mapleader = " "
 
+-- I constantly press this by accident
+vim.api.nvim_set_keymap("", "I", "<Nop>", {noremap = true, silent = true})
+
 local wk = require("which-key")
 
 -- normal mode
 wk.register({
+  -- top level
+  n = {"<cmd>noh<cr>", "Clear Search"},
+
   -- Buffers
   b = {
     name = "buffers",
@@ -17,13 +23,16 @@ wk.register({
     name = "code",
     d = {"<cmd>lua vim.lsp.buf.definition()<cr>", "Jump to Definition"},
     k = {"<cmd>lua vim.lsp.buf.hover()<cr>", "Documentation"},
-    l = {"<Plug>kommentary_line_default<cr>", "Toggle Comments"}
+    l = {"<Plug>kommentary_line_default<cr>", "Toggle Comments"},
+    x = {"<cmd>Trouble<cr>", "Problems"}
   },
 
   -- Files
   f = {
     name = "file", -- optional group name
-    f = {"<cmd>Telescope find_files<cr>", "Find File"}
+    e = {"<cmd>Fern %:h<cr>", "Explore at Dir"},
+    f = {"<cmd>Telescope find_files<cr>", "Find File"},
+    r = {"<cmd>Fern .<cr>", "Explore at Root"}
   },
 
   -- Window
@@ -36,7 +45,9 @@ wk.register({
     h = {"<cmd>wincmd h<cr>", "Select Left Window"},
     j = {"<cmd>wincmd j<cr>", "Select Lower Window"},
     k = {"<cmd>wincmd k<cr>", "Select Upper Window"},
-    l = {"<cmd>wincmd l<cr>", "Select Right Window"}
+    l = {"<cmd>wincmd l<cr>", "Select Right Window"},
+    s = {"<cmd>split<cr>", "Split Horizontally"},
+    v = {"<cmd>vsplit<cr>", "Split Vertically"}
   }
 }, { prefix = "<leader>" })
 

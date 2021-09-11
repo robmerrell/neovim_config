@@ -1,8 +1,12 @@
 return require("packer").startup(function()
   use "wbthomason/packer.nvim"
 
+  -- file explorer
+  use "lambdalisue/fern.vim"
+
   -- look and feel
   use "rktjmp/lush.nvim"
+  use "yashguptaz/calvera-dark.nvim"
   use "~/projects/wavebeam.nvim"
   use "folke/tokyonight.nvim"
   use {
@@ -20,6 +24,7 @@ return require("packer").startup(function()
   use "windwp/nvim-autopairs"
   use "hrsh7th/vim-vsnip"
   use "hrsh7th/vim-vsnip-integ"
+  use "ggandor/lightspeed.nvim"
 
   -- completion
   use {
@@ -31,8 +36,21 @@ return require("packer").startup(function()
     }
   }
 
-  -- language support 
+  -- tree sitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate"
+  } 
+  use "nvim-treesitter/playground"
+
+  -- lsp
+  use {
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons"
+  }
   use "neovim/nvim-lspconfig"
+
+  -- language support 
   use "elixir-editors/vim-elixir"
 
   -- keybinds
