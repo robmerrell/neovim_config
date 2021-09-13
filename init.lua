@@ -131,3 +131,8 @@ override_ts_query("elixir", "highlights")
 -- lsp
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+
+-- testing
+vim.g["test#strategy"] = "tslime"
+

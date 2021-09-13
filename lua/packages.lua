@@ -26,6 +26,10 @@ return require("packer").startup(function()
   use "hrsh7th/vim-vsnip-integ"
   use "ggandor/lightspeed.nvim"
 
+  -- testing
+  use "vim-test/vim-test"
+  use "jgdavey/tslime.vim"
+
   -- completion
   use {
     "hrsh7th/nvim-cmp",

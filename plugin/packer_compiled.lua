@@ -149,6 +149,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/trouble.nvim"
   },
+  ["tslime.vim"] = {
+    loaded = true,
+    path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/tslime.vim"
+  },
   ["vim-elixir"] = {
     loaded = true,
     path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/vim-elixir"
@@ -156,6 +160,10 @@ _G.packer_plugins = {
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/vim-surround"
+  },
+  ["vim-test"] = {
+    loaded = true,
+    path = "/Users/robmerrell/.local/share/nvim/site/pack/packer/start/vim-test"
   },
   ["vim-vsnip"] = {
     loaded = true,

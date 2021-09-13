@@ -22,6 +22,7 @@ wk.register({
   c = {
     name = "code",
     d = {"<cmd>lua vim.lsp.buf.definition()<cr>", "Jump to Definition"},
+    f = {"<cmd>Telescope lsp_document_symbols symbols=function<cr>", "Find Function"},
     k = {"<cmd>lua vim.lsp.buf.hover()<cr>", "Documentation"},
     l = {"<Plug>kommentary_line_default<cr>", "Toggle Comments"},
     x = {"<cmd>Trouble<cr>", "Problems"}
@@ -33,6 +34,16 @@ wk.register({
     e = {"<cmd>Fern %:h<cr>", "Explore at Dir"},
     f = {"<cmd>Telescope find_files<cr>", "Find File"},
     r = {"<cmd>Fern .<cr>", "Explore at Root"}
+  },
+
+  -- Testing
+  t = {
+    name = "Testing",
+    a = {"<cmd>TestSuite<cr>", "Run All Tests"},
+    c = {"<cmd>TestNearest<cr>", "Run Current Test"},
+    f = {"<cmd>TestFile<cr>", "Run File's Test"},
+    p = {"<cmd>TestLast<cr>", "Run Previous Test"},
+    v = {"<Plug>SetTmuxVars<cr>", "Set Tmux Vars"}
   },
 
   -- Window
